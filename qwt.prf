@@ -1,0 +1,20 @@
+# -*- mode: sh -*- ################################################
+# Qwt Widget Library
+# Copyright (C) 1997   Josef Wilgen
+# Copyright (C) 2002   Uwe Rathmann
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the Qwt License, Version 1.0
+###################################################################
+
+QwtBuild =
+QwtVersion = 6.1.0
+
+unix {
+    # may be need on some distros
+    #QwtBase    = /usr/local/qwt-$${QwtVersion}
+    #INCLUDEPATH += $${QwtBase}/include
+    #LIBS        += -L$${QwtBase}/lib -lqwt6
+    LIBS        += -lqwt6
+}
+
